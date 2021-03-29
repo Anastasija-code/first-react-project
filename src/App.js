@@ -1,19 +1,26 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {Title} from './components/title/Title'
-import FormInput from './components/forminput/Forminput' 
+// import {Title} from './components/title/Title'
+// import FormInput from './components/forminput/Forminput' 
+import {UserInfo} from './components/userinfo/UserInfo'
 
-
- export const App =() => (
+export const App = () => (
   <div>
-    <FormInput labelText={'телефон'} inputType={'phone'}/>
-    <FormInput labelText={'имя'} inputType={'text'}/>
-    <FormInput labelText={'пароль'} inputType={'password'}/>
-    <Title title={'Главная'}/>
-    <Title title={'Главная,но не совсем'}/>
+    <UserInfo userName={'Вова'} userGender={'муж'} userAge={'27'} yearsWorked={'1'}/>
+    <UserInfo userName={'Иван'} userGender={'муж'} userAge={'21'} yearsWorked={'2'}/>
+    <UserInfo userName={'Ольга'} userGender={'жен'} userAge={'37'} yearsWorked={'3'}/>
   </div>
 )
+//  export const App =() => (
+//   <div>
+//     <FormInput labelText={'телефон'} inputType={'phone'}/>
+//     <FormInput labelText={'имя'} inputType={'text'}/>
+//     <FormInput labelText={'пароль'} inputType={'password'}/>
+//     <Title title={'Главная'}/>
+//     <Title title={'Главная,но не совсем'}/>
+//   </div>
+// )
 // const Items = () => {
 //   return (
 //     <div>
